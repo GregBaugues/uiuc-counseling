@@ -45,7 +45,7 @@ For tech stack:
 
 - Deployment I'll either use Digital Ocean or Heroku. The latter is a bit faster but more expensive. I'm also not sure the best way to schedule the job. Cronjob seems like the obvious choice, but I'm not really sure how that'll work when it's running inside a container. I *think* that you have to use an add-on to schedule jobs with Heroku which comes at an additional expense. For an app this simple it seems silly to be spending >$5+ a month on hosting. 
 
-We'll see if we can bang this out in a couple hours of livecoding.tv. I'll keep a [TODO](/todo.md) list and knock things out as we go. 
+We'll see if we can bang this out in a couple hours of livecoding.tv. I'll keep a [TODO](TODO.md) list and knock things out as we go. 
 
 
 

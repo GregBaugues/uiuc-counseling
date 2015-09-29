@@ -2,6 +2,7 @@
 
 ## Questions? 
 - Do we want users to text in their name? Don't think so. Anonymity. Typically helpful if we ask them to text in something to avoid analysis paralysis. Spirit animal? Favorite movie or video game character? Use that as proxy identity?
+- Should I write tests? 
 
 ## Setup
 - setup a Twilio number to serve as surrogate counseling number for testing
