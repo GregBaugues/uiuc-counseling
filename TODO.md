@@ -4,7 +4,6 @@
 - Do we want users to text in their name? Don't think so. Anonymity. Typically helpful if we ask them to text in something to avoid analysis paralysis. Spirit animal? Favorite movie or video game character? Use that as proxy identity?
 
 ## Inbound messages
-- Add sender's phone number to the "to send list"
 - If they've requested STOP, remove from the list
 - If they're already added.... do nothing? 
 
@@ -40,3 +39,4 @@
 
 - Should I write tests? 
 - Reply to inbound message. Tell them they can reply with STOP to be removed
+- Add sender's phone number to the "to send list"
