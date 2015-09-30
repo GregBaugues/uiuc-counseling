@@ -9,7 +9,12 @@ post '/message' do
   body = params['Body']
 
   content_type "text/xml"
-  sign_up(phone_number)
+
+  if body.downcase.include?('stop')
+    unsubscribe(phone_number)
+  else
+    sign_up(phone_number)
+  end
 end
 
 def sign_up(phone_number)
@@ -18,6 +23,16 @@ def sign_up(phone_number)
   "<Response>
     <Message>
       You're signed up to get a wake up call that will connect you to the counseling center.
+    </Message>
+  </Response>"
+end
+
+def unsubscribe(phone_number)
+  delete_phone_number(phone_number)
+
+  "<Response>
+    <Message>
+      You've been removed from the list.
     </Message>
   </Response>"
 end
