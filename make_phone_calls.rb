@@ -1,4 +1,5 @@
 require 'twilio-ruby'
+require 'pry'
 
 def twilio_client
   Twilio::REST::Client.new ENV['ACCOUNT_SID'], ENV['AUTH_TOKEN']
@@ -12,5 +13,14 @@ def call(phone_number)
   )
 end
 
-call('+13129526796')
+def phone_numbers
+  files = Dir.entries("numbers")
+  files.delete(".")
+  files.delete("..")
+  files # equivalent to the phone numbers that have subscribed
+end
+
+phone_numbers.each do |phone_number|
+  call(phone_number)
+end
 
