@@ -1,22 +1,39 @@
 require 'sinatra'
 require 'pry'
+require 'pp'
 
 post '/message' do
-  content_type "text/xml"
+  pp params
 
-  save_number(params['From'])
+  phone_number = params['From']
+  body = params['Body']
+
+  content_type "text/xml"
+  sign_up(phone_number)
+end
+
+def sign_up(phone_number)
+  save_phone_number(phone_number)
 
   "<Response>
     <Message>
       You're signed up to get a wake up call that will connect you to the counseling center.
     </Message>
   </Response>"
-
 end
 
-def save_number(phone_number)
-  filename = "numbers/#{phone_number}"
-  File.open(filename, "w") { |f| }
+def save_phone_number(phone_number)
+  File.open(filename(phone_number), "w") { |f| } rescue binding.pry
 end
 
-binding.pry
+def delete_phone_number(phone_number)
+  begin
+    File.delete(filename(phone_number))
+  rescue
+    "File #{filename(phone_number)} doesn't exist"
+  end
+end
+
+def filename(phone_number)
+  "numbers/#{phone_number}"
+end
