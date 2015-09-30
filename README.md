@@ -4,11 +4,9 @@ Twelve years ago, I failed out of the University of Illinois Urbana-Champaign. I
 
 About seven years ago I started to get treatment. I take a pill for my bipolar every morning and [occasionally take stimulants for ADHD](http://baugues.com/adhd-meds) and life's been much improved. 
 
-And over the last two years, I've had the privilege of speaking at a bunch of tech events on [developers and depression](http://devsanddepression.com). 
+Over the last two years, I've spoken at a bunch of tech events on [developers and depression](http://devsanddepression.com). Last year I had the honor of returning to UIUC to speak to the students in the computer science program. That was a healing moment for me -- coming back to the site of my biggest life failure and speaking in the new CS building just blocks from the apartment where I slept away the worst year of my life. 
 
-Last year I had the honor of returning to UIUC to speak to the students in the computer science program. That was a healing moment for me -- coming back to the site of my biggest life failure and speaking in the largest lecture hall in the new CS building just blocks from the apartment where I slept away my days during the worst year of my life. 
-
-I have two goals whenever I speak about this stuff: 
+I have three goals whenever I speak about this stuff: 
 
 1. Make it more okay to talk about depression and other mental illnesses by going first. 
 2. Help folks realize that if they're struggling with certain symptoms, they may have a treatable mental health condition as opposed to just being a lazy bastard
@@ -18,11 +16,11 @@ As for #3: Students struggling with mental illness at UIUC have an advantage ove
 
 ![](/public/uiuc-counseling.png)
 
-Now, I don't fault the counseling center at all for this. They are in a difficult *demand > supply* situation, and if you think back to Econ 101, the two most common methods of allocating scarce resources  is pricing and queuing (and sadly, inexpensive counseling is a *very* scarce resource in this country). When you give away an in-demand resource for free, lines form. 
+Now, I don't fault the counseling center at all for this. They are in a difficult *demand > supply* situation. If you think back to Econ 101, the two most common methods of allocating scarce resources are pricing and queuing (and sadly, counseling is a *very* scarce resource in this country). When you give away an in-demand resource for free, lines form. So I'm not sure the Counseling Center has any better plays here. 
 
 (As an aside, this is why I'm one of the few fans of the recent increase in street meter parking prices in Chicago -- you can always find a spot when you need one. Unfortunately, that market mechanism doesn't translate over to mental health care where "I'm so depressed I can't keep a job" and "I'm so poor I can't treat my depression" causes a downward spiral that's bad for both the individual and society. But I digress...)
 
-When I was depressed, the only way that I was up at 7:50am was if I had been up all night. I heard similar sentiments from several of the students I spoke with after my talk: that it felt nearly impossible for to a) remember to do anything at a specific time b) wake up that early and make the call. 
+When I was depressed, the only way that I was awake at 7:50am was if I had been up all night. I heard similar sentiments from several of the students I spoke with after my talk: that it felt nearly impossible for to a) remember to do *anything* at a specific time b) wake up that early and make the call. 
 
 So, I thought we might build something with Twilio to give those kids a fighting chance of getting an appointment. 
 

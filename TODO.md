@@ -2,11 +2,6 @@
 
 ## Questions? 
 - Do we want users to text in their name? Don't think so. Anonymity. Typically helpful if we ask them to text in something to avoid analysis paralysis. Spirit animal? Favorite movie or video game character? Use that as proxy identity?
-- Should I write tests? 
-
-## Setup
-- setup a Twilio number to serve as surrogate counseling number for testing
-- set up development environment
 
 ## Inbound messages
 - Reply to inbound message. Tell them they can reply with STOP to be removed
@@ -39,3 +34,9 @@
 - create a landing page with instructions
 
 # Done
+
+## Setup
+- setup a Twilio number to serve as surrogate counseling number for testing
+- set up development environment
+
+- Should I write tests? 
