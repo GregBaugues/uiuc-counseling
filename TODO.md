@@ -4,7 +4,7 @@
 - Do we want users to text in their name? Don't think so. Anonymity. Typically helpful if we ask them to text in something to avoid analysis paralysis. Spirit animal? Favorite movie or video game character? Use that as proxy identity?
 
 ## Phone Call
-- Standalone script (not in Sintra) to run through list of folks, place a call, and forward it if they pickup. 
+- run through list of folks
 
 ## Post Call
 - If a call is connected, ask the user if they got an appointment set. Can do this with a callback on the phonecall. 
@@ -39,3 +39,7 @@
 - Add sender's phone number to the "to send list"
 - If they've requested STOP, remove from the list
 - If they're already signed.... do nothing? 
+
+## Phone calls
+- Standalone script (not in Sintra) to 
+- place a call forward it if they pickup

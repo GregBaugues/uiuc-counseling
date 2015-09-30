@@ -2,6 +2,14 @@ require 'sinatra'
 require 'pry'
 require 'pp'
 
+post '/forward-call' do
+  content_type "text/xml"
+
+  "<Response>
+    <Dial>+12172473048</Dial>
+  </Response>"
+end
+
 post '/message' do
   pp params
 
@@ -36,6 +44,8 @@ def unsubscribe(phone_number)
     </Message>
   </Response>"
 end
+
+
 
 def save_phone_number(phone_number)
   File.open(filename(phone_number), "w") { |f| }
