@@ -38,7 +38,7 @@ def unsubscribe(phone_number)
 end
 
 def save_phone_number(phone_number)
-  File.open(filename(phone_number), "w") { |f| } rescue binding.pry
+  File.open(filename(phone_number), "w") { |f| }
 end
 
 def delete_phone_number(phone_number)
