@@ -8,7 +8,7 @@ end
 def call(phone_number)
   twilio_client.calls.create(
     to: phone_number,
-    from: "+12172366087",
+    from: ENV['WAKE_UP_CALL_PHONE_NUMBER'],
     url: "http://baugues.ngrok.com/forward-call"
   )
 end

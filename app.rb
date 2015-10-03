@@ -1,6 +1,4 @@
 require 'sinatra'
-require 'pry'
-require 'pp'
 
 post '/forward-call' do
   content_type "text/xml"
@@ -11,14 +9,12 @@ post '/forward-call' do
 end
 
 post '/message' do
-  pp params
-
   phone_number = params['From']
   body = params['Body']
 
   content_type "text/xml"
 
-  if body.downcase.include?('stop')
+  if body.downcase.include?('unsubscribe')
     unsubscribe(phone_number)
   else
     sign_up(phone_number)
@@ -44,8 +40,6 @@ def unsubscribe(phone_number)
     </Message>
   </Response>"
 end
-
-
 
 def save_phone_number(phone_number)
   File.open(filename(phone_number), "w") { |f| }
