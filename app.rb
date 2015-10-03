@@ -42,6 +42,7 @@ def unsubscribe(phone_number)
 end
 
 def save_phone_number(phone_number)
+  make_numbers_dir_if_it_doesnt_exist
   File.open(filename(phone_number), "w") { |f| }
 end
 
@@ -55,4 +56,10 @@ end
 
 def filename(phone_number)
   "numbers/#{phone_number}"
+end
+
+def make_numbers_dir_if_it_doesnt_exist
+  unless Dir.exists?("numbers")
+    Dir.mkdir(File.join("numbers"))
+  end
 end
